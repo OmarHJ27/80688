@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            text-align:center;
+
+        }
+        .padre{
+            height: 25%;
+            background-color: gray;
+        }
+        .padre2{
+            height: 10%;
+            background-color: blue;
+        }
+        .padre3{
+            height: 55%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hijo{
+            width: 60%;
+            background-color: rgb(172, 85, 85);
+        }
+        .hijo2{
+            width: 40%;
+            background-color: rgb(24, 158, 158);
+        }
+        .padre4{
+            height: 10%;
+            background-color: blue;
+        }
+        html, body {
+            height: 100%;
+        }
+
+
+    </style>
+    <div class="padre">Header</div>
+    <div class="padre2">Menu</div>
+    <div class="padre3">
+        <div class="hijo">Contenido</div>
+        <div class="hijo2">Publicidad</div>
+    </div>
+    <div class="padre4">Pie</div>
+</body>
+</html>
