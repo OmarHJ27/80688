@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .padre {
+            background-color: gray;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hijo{
+            background-color: aqua;
+            width: 200px;
+            padding: 10;
+            /*margin-left: auto;
+            margin-right: auto;*/
+            margin: auto;
+        }
+        .hijo2{
+            width: 200px;
+            background-color: orange;
+        }
+        .hijo3{
+            margin: 10px;
+            padding: 3px;
+            background-color: blueviolet;
+        }
+    </style>
+    <div class="padre">padre01</div>
+    <div class="padre">padre02</div>
+    <div class="padre">padre03</div>
+    <div class="padre">padre04</div>
+    <div class="padre">padre05</div>
+    <div class="padre">
+        <div class="hijo2">h01</div>
+        <div class="hijo2">h02</div>
+        <div class="hijo2">h03</div>
+        <div class="hijo2">h04</div>
+        <div class="hijo2">h05</div>
+        <div class="hijo">01</div>
+    </div>
+    <div class="padre">
+        <div class="hijo">02</div>
+    </div>
+    <div class="padre">
+        <div class="hijo">03</div>
+    </div>
+    <div class="padre">
+        <div class="hijo">04</div>
+    </div>
+
+    <p>
+        <div class="hijo3">padre e hijo 01</div>
+        <div class="hijo3">padre e hijo 02</div>
+        <div class="hijo3">padre e hijo 03</div>
+        <div class="hijo3">padre e hijo 04</div>
+        <div class="hijo3">padre e hijo 05</div>
+    </p>
+</body>
+</html>

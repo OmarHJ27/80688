@@ -7,24 +7,88 @@
     <title>Document</title>
 
     <style>
-        h1 , p{
-            font-size: 15px;
-            color: green;
+        .ui:hover{
+            background-color: greenyellow;
+            color: red;
+            font-weight: bold;
         }
+        h1{
+            font-size: 25px;
+            color: rgb(0, 255, 0);
+        }
+         span{
+            color: rgb(99, 197, 6);
+        }
+
+        #p1 {
+            color:rgb(255, 0, 0)
+        }
+        #p2 {
+            color:yellow
+        }
+        #p3{
+            color:blueviolet
+        }
+
+        .peso{
+            font-weight: bold;
+            color: black !important;
+        }
+        .ui{
+            color:white;
+            padding: 10px;
+        }
+        #borrar{
+            background-color: red;
+            
+        }
+        #borrar:hover{
+            background-color: gray;
+        }
+        #borrar:active{
+            background-color: rgb(209, 206, 1);
+            color: black;
+        }
+        #cambiar{
+            background-color: green;
+
+        }
+        #guardar{
+            background-color: blue;
+        }
+        a[target="_blank"]{
+            background-color: yellow;
+        }
+        
     </style>
-<link rel="stylesheet" href="practica02.css">
+    <link rel="stylesheet" href="practica02.css">
 </head>
-<body>
+
+<body> 
+    <div><input type="button" value="Guardar Datos" id="guardar" class="ui">
+        <input type="button" value="Borrar Datos" id="borrar" class="ui">
+        <input type="button" value="Cambiar Datos" id="cambiar" class="ui">
+    </div>
+    
     <h1 style="color: rgb(255, 0, 0);">Titulo de Nivel 1</h1>
-    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates magni quia eius dolorem earum modi nesciunt, sequi enim fuga quam porro, animi, atque pariatur ducimus veritatis? Iste libero ipsa accusantium?</span>
+    <p><span id="p1" class="peso">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates magni quia eius dolorem earum modi nesciunt, sequi enim fuga quam porro, animi, atque pariatur ducimus veritatis? Iste libero ipsa accusantium?</span>
         <span>Officiis ducimus nam doloribus unde, nihil consequatur quae minus tempore provident ullam quos dolorem voluptatum natus deleniti fugit distinctio a in ipsa optio suscipit et earum porro ea. Cum, sapiente.</span>
-        <span>Labore quam neque provident voluptatem mollitia animi consectetur? Minus, neque numquam. Labore, ipsa aperiam velit recusandae molestias laborum cupiditate odio provident facilis voluptatum consequuntur, dolore eius maxime, rerum voluptatibus ab!</span>
+        <span>Labore quam neque provident voluptatem mollitia animi consectetur? eMinus, neque numquam. Labore, ipsa aperiam velit recusandae molestias laborum cupiditate odio provident facilis voluptatum consequuntur, dolore eius maxime, rerum voluptatibus ab!</span>
         <span>Ducimus assumenda maxime maiores culpa labore facilis aliquid sit, odio necessitatibus ea adipisci consequatur quaerat ad architecto rem velit quos harum. Repudiandae aut odio atque consequatur nemo magnam voluptates sequi?</span>
         <span>Quia, inventore ipsa nobis quod, dolore doloribus molestiae corporis qui dolorem non numquam maiores alias reiciendis autem illum debitis porro et error. Modi debitis veniam quod delectus atque libero provident?</span>
     </p>
-    <h2 style="font-size: 20px ;">Ola mi primer pagina es asi </h2>
-    <h3 style="font-size: 10px;">Que emocion</h3>
-    <h4>si</h4>
+
+    <p2><span id="p2" class="peso">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores modi enim placeat aperiam vitae, iusto ea alias assumenda libero suscipit asperiores saepe voluptate veritatis. Dolore unde delectus alias nulla fugiat.</span>
+        <span>Eligendi, quo. Neque doloremque, laboriosam necessitatibus, quisquam accusamus ea ipsum veritatis sint voluptates facilis nisi corporis adipisci voluptate? Et adipisci accusamus iste libero consequuntur quidem veritatis odio expedita debitis sequi!</span>
+        <span>Odit ab soluta excepturi. Dolorem aperiam, maiores repudiandae labore cum laudantium dolore ab iusto? Amet nulla porro consequatur minus quis nam tempore, velit, debitis vero atque dignissimos ad fugiat modi!</span>
+    </p2>
+
+    <div><span id="p3" class="peso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima quibusdam ipsam provident ad similique atque neque? Soluta tempore recusandae enim possimus nobis. Fugiat cumque iusto, quibusdam sunt fugit ipsa.</span>
+        <span>Minima alias voluptatem fugit consequatur architecto qui sunt expedita molestias animi consequuntur? Dolor dolorem consequuntur illum quam dolore iure eligendi, repudiandae laboriosam dolorum doloribus tempore iusto soluta molestiae numquam ea!</span>
+        <span>Fugiat, vero cum tempora praesentium veritatis sint tempore sunt est molestias aliquid officia saepe beatae amet veniam officiis quisquam, facilis accusamus. Unde adipisci vitae non aut dolorem quod dignissimos labore.</span>
+    </div>
+    
+      
 
 </body>
 </html>
