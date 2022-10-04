@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        function cambiarColor(color) {
+            console.log("Color Recibido: ",color)
+            var e = document.getElementById("titulo1")
+            e.style.color = color
+
+        }
+        function cambiarColores(color) {
+            console.log("Los parrafos cambiaron a:", color)
+            var c= document.getElementsByTagName("h1")
+            //c[1].style.color = color
+            //c[2].style.color = color
+            //c[3].style.color = color
+            //c[4].style.color = color
+            //c[0].style.color = color
+        
+        }
+        
+    </script>
+
+</head>
+<body>
+    
+    <h1 id="titulo1">Este es un titulo I</h1>
+    <button onclick="cambiarColor('Red')">Rojo</button>
+    <button onclick="cambiarColor('Green')">Verde</button>
+    <button onclick="cambiarColor('Blue')">Azul</button>
+    <h1 id="titulo2">Este es un titulo II</h1>
+    <h1 id="titulo3">Este es un titulo III</h1>
+    <h1 id="titulo4">Este es un titulo IV</h1>
+    <h1 id="titulo5">Este es un titulo V</h1>
+    
+
+    <button onclick="cambiarColores('Green')">Cambia los colores</button>
+    <button onclick="cambiarColores('black')">Deshacer</button>
+</body>
+</html>
