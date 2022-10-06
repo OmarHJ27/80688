@@ -14,16 +14,28 @@
             e.style.color = color
 
         }
+
+
         function cambiarColores(color) {
             console.log("Los parrafos cambiaron a:", color)
             var c= document.getElementsByTagName("h1")
-            //c[1].style.color = color
-            //c[2].style.color = color
-            //c[3].style.color = color
-            //c[4].style.color = color
-            //c[0].style.color = color
+            //for (const p in c) {
+            //  c[p].style.color=color
+            //}
+            for (const x in c) {
+                if (Object.hasOwnProperty.call(c, x)) {
+                    c[x].style.color = color;
+                    
+                }
+            }
+        //    c[1].style.color = color
+        //    c[2].style.color = color
+        //    c[3].style.color = color
+        //    c[4].style.color = color
+        //    c[0].style.color = color
         
         }
+        
         
     </script>
 
@@ -41,6 +53,7 @@
     
 
     <button onclick="cambiarColores('Green')">Cambia los colores</button>
+    <button onclick="cambiarColores('Red')">Cambia los colores (red)</button>
     <button onclick="cambiarColores('black')">Deshacer</button>
 </body>
 </html>
