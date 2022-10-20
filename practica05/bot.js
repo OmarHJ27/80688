@@ -3,6 +3,7 @@ var msj_bot ={
     despedida : "adios",
     preocupacion : "como estas?",
     sorpresa: "orale"
+   
 }
 var arr_msj = ["hola ","adios " ,"como estas? ","orale "]
 
@@ -33,5 +34,6 @@ function woz(params) {
     if (params == "hola tu") {
         return "preocupacion"
     }
+    
     
 }
