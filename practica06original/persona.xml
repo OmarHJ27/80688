@@ -1,0 +1,18 @@
+<personas>
+
+    <persona>
+        <nombre>Omar</nombre>
+        <direccion>Tuxpan</direccion>
+        <telefono>2228882228</telefono>
+    </persona>
+    
+    <persona>
+        <nombre>Alfredo</nombre>
+        <direccion>Xalapa</direccion>
+        <telefono>8882228882</telefono>
+    </persona>
+
+</personas>
+
+
+    

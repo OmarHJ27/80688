@@ -25,6 +25,9 @@
         button{
             font-size: 30px;
         }
+        select{
+            font-size: 30px;
+        }
     </style>
 <body>
     <h1>Modificar Usuario</h1>
@@ -38,15 +41,20 @@
             <label for="pass">Correo </label>
             <input type="text" id="correoUser" placeholder="Introduce tu Correo">
         </div>
-
+        <div>
+            <label for="" id="rol">Rol</label>
+            <select name="rol" size="1" id="os-ga" class="select stacked">
+                <option value="0">Selecciona el rol</option>
+                <option value="1">Encargado</option>
+                <option value="2">Administrador</option>
+                <option value="3">Otro (Especifique abajo)</option>
+            </select>
+        </div>
         <div>
             <button type="button" id="entrar">Eliminar Usuario</button>
             <button type="button" id="entrar">Guardar Cambios</button>
         </div>
 
-        <div>
-            <label for="" id="rol">Rol</label>
-            
-        </div>
+        
     </form>
 </html>

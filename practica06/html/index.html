@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <label for="user">Usuario</label>
-        <input type="text" id="login" placeholder="Correo Electronico">
-        <label for="pass">Contraseña</label>
-        <input type="password" id="password">
-        <button type="button" id="entrar">ENTRAR</button>
+    <form action="http://localhost:4567" method="post">
+        <input type="text" name="login" placeholder="usuario">
+        <input type="password" name="password" placeholder="contraseña" >
+        <button  id="entrar">entrar</button>
     </form>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
