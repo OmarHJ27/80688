@@ -61,6 +61,19 @@ public class App {
             return DAO.crearUsuario(u);
         });
 
+        post("/edita",(req,res)->{
+            String datosCliente = req.body();
+            Usuario u = gson.fromJson(datosCliente, Usuario.class);
+
+            return DAO.editaUsuario(u);
+        });
+
+        post("/elimina",(req,res)->{
+            String datosCliente = req.body();
+            Usuario u = gson.fromJson(datosCliente, Usuario.class);
+
+            return DAO.eliminarUsuario(u);
+        });
 
     }
 }

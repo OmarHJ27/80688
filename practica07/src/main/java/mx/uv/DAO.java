@@ -95,4 +95,78 @@ public class DAO {
         }
         return msj;
     }
+
+    public static String editaUsuario(Usuario u) {
+        PreparedStatement stm = null;
+        Connection conn = null;
+        String msj = "";
+
+        conn = c.getConnection();
+        try {
+            String sql = "UPDATE INTO usuarios (id, nombre, password) set (?,?,?) where nombre=? and password=?";
+            stm = (PreparedStatement) conn.prepareStatement(sql);
+            stm.setString(1, u.getId());
+            stm.setString(2, u.getNombre());
+            stm.setString(3, u.getPassword());
+            if (stm.executeUpdate() > 0)
+                msj = "usuario cambiado";
+            else
+                msj = "usuario no cambiado";
+
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            if (stm != null) {
+                try {
+                    stm.close();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+                stm = null;
+            }
+            try {
+                conn.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+        return msj;
+    }
+
+    public static String eliminarUsuario(Usuario u) {
+        PreparedStatement stm = null;
+        Connection conn = null;
+        String msj = "";
+
+        conn = c.getConnection();
+        try {
+            String sql = "DELETE FROM usuarios (id, nombre, password) WHERE nombre=? and password=?";
+            stm = (PreparedStatement) conn.prepareStatement(sql);
+            stm.setString(1, u.getId());
+            stm.setString(2, u.getNombre());
+            stm.setString(3, u.getPassword());
+            if (stm.executeUpdate() > 0)
+                msj = "usuario eliminado";
+            else
+                msj = "usuario no eliminado";
+
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            if (stm != null) {
+                try {
+                    stm.close();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+                stm = null;
+            }
+            try {
+                conn.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+        return msj;
+    }
 }
